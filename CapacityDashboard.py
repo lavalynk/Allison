@@ -32,7 +32,7 @@ if sys.platform == 'win32':
 APP_TITLE = "Dryer Capacity Dashboard"
 
 # current application version; bump this with each release
-APP_VERSION = "1.0.0"
+APP_VERSION = "1.0.1"
 
 # url to a JSON file describing the latest release.  the file should look
 # like { "version": "1.0.1", "url": "https://.../DryerCapacityDashboard.exe" }
@@ -726,7 +726,11 @@ class StartPage(tk.Frame):
         # Subtitle
         subtitle = tk.Label(card_inner, text="Analyze dryer capacity and cleaning schedules",
                            font=("Segoe UI", 10), bg="white", fg="#6b7280")
-        subtitle.pack(pady=(0, 24))
+        subtitle.pack(pady=(0, 8))
+        # show current app version
+        ver_lbl = tk.Label(card_inner, text=f"Version {APP_VERSION}",
+                           font=("Segoe UI", 8), bg="white", fg="#9ca3af")
+        ver_lbl.pack(pady=(0, 16))
 
         # File selection area
         file_frame = tk.Frame(card_inner, bg="#f9fafb", highlightbackground="#e5e7eb", highlightthickness=1)
