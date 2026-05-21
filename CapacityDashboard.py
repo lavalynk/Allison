@@ -37,7 +37,7 @@ APP_VERSION = "1.0.1"
 # url to a JSON file describing the latest release.  the file should look
 # like { "version": "1.0.1", "url": "https://.../DryerCapacityDashboard.exe" }
 # you can host this on GitHub Pages, S3, a private server, etc.
-UPDATE_INFO_URL = "https://example.com/dryer_dashboard/latest.json"
+UPDATE_INFO_URL = "https://raw.githubusercontent.com/lavalynk/Allison/main/latest.json"
 
 # Handle icon path for both development and PyInstaller frozen exe
 def get_resource_path(filename):
